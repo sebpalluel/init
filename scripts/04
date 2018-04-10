@@ -1,0 +1,15 @@
+#!/bin/bash
+
+crontab -l | { cat; echo "0 0 * * *
+\
+#!/bin/bash
+\
+if [[ $(sudo md5sum /var/spool/cron/crontabs/vagrant.backup | cut -d' ' -f1) == $(sudo md5sum /var/spool/cron/crontabs/vagrant | cut -d' ' -f1) ]]
+then
+	echo \"/var/spool/cron/crontabs/ file of user vagrant has not been modified\"
+else
+	echo \"Warning ! /var/spool/cron/crontabs/ file of user vagrant has been modified !
+	echo \"Warning ! /var/spool/cron/crontabs/ file of user vagrant has been modified !\" | mailx -s "crontab modified" root
+fi
+sudo cp /var/spool/cron/crontabs/vagrant /var/spool/cron/crontabs/vagrant.backup
+"; } | crontab -

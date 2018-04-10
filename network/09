@@ -1,0 +1,1 @@
+L'IP publique de 42.fr avec OpenDNS comme resolver est 163.172.250.12, en utilisant la commande 'dig +short @resolver1.opendns.com 42.fr'

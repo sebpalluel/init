@@ -1,0 +1,2 @@
+Le materiel qui fait le lien ente l'ordinateur sur le reseau local et l'exterieur est le nat (Network Address Translation), un firewall dont l'utilitee est de securiser l'intra-net.
+Sont IP est 10.60.1.11

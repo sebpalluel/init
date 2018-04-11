@@ -1,7 +1,2 @@
-/* host slash16.org | awk '{print $4}' | head -n1 | nslookup | grep 'nameserver' */
-
-192.54.in-addr.arpa	nameserver = x4.amazonaws.org.
-192.54.in-addr.arpa	nameserver = x2.amazonaws.com.
-192.54.in-addr.arpa	nameserver = x3.amazonaws.org.
-192.54.in-addr.arpa	nameserver = x1.amazonaws.com.
-192.54.in-addr.arpa	nameserver = pdns1.ultradns.net.
+l'hebergeur est "Amazon AWS", on peut trouver cette info grace a la commande 
+'host slash16.org | awk '{print $4}' | head -n1 | nslookup | grep 'nameserver''

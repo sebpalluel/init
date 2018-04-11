@@ -1,11 +1,2 @@
-/*scutil --dns*/
-
-DNS configuration
-
-resolver #1
-  search domain[0] : 42.fr
-  nameserver[0] : 10.51.1.42
-  nameserver[1] : 10.51.1.43
-  if_index : 4 (en0)
-  flags    : Request A records
-  reach    : Reachable
+il s'agit du fichier "/etc/resolv.conf", mais on peut egalement obtenir ces infos grace a la commande
+'scutils --dns'

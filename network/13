@@ -1,0 +1,2 @@
+La commande 'nslookup 10.51.1.253' nous indique que sont nom est "dhcp.42.fr".
+Ce type de server est donc un DHCP (Dynamic Host Configuration Protocol) dont le role est d'assigner automatiquement des addresse IP et subnet mask aux devices.
